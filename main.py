@@ -10,6 +10,7 @@ if __name__ == '__main__':
         print("1.Pokaż co u znajommych: ")
         print("2.Dodaj znajomego: ")
         print("3.Wyszukaj znjaomego :")
+        print("4.Usuń znajonego :")
         menu_option: str = input("Wybierz dostępną funkje z menu: ")
         if menu_option == "0":
             break
@@ -19,3 +20,5 @@ if __name__ == '__main__':
             create_user(users)
         if menu_option == "3":
             search(users)
+        if menu_option == "4":
+            remove(users)
